@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;  
+            padding: 0;
+        }
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+
+        .formGroup {
+
+            width: 400px;
+            height: 100px;
+            border: 1;
+            margin-bottom: 10px;
+        }
+
+        .formGroup label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .formGroup input[type="text"],
+        .formGroup input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .formGroup .error-message {
+            color: red;
+        }
+
+        .formGroup .login-button {
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function handleBackspace(event) {
+            if (event.keyCode === 8) {
+                event.preventDefault();
+                event.target.value = "";
+            }
+        }
+
+        function login() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            var usernameError = document.getElementById("username-error");
+            var passwordError = document.getElementById("password-error");
+
+            usernameError.textContent = "";
+            passwordError.textContent = "";
+
+            if (username !== "abc1") {
+                usernameError.textContent = "아이디가 맞지 않습니다.";
+            }
+
+            if (password !== "abc1") {
+                passwordError.textContent = "비밀번호가 맞지 않습니다.";
+            }
+
+            if (username === "abc1" && password === "abc1") {
+                alert("로그인 성공!");
+                window.location.href = "FirstPage.html";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <div class="formGroup">
+            <label for="username">Username:</label>
+            <input type="text" id="username" onkeydown="handleBackspace(event)">
+            <div class="error-message" id="username-error"></div>
+        </div>
+        <div class="formGroup">
+            <label for="password">Password:</label>
+            <input type="password" id="password" onkeydown="handleBackspace(event)">
+            <div class="error-message" id="password-error"></div>
+        </div>
+        <button class="login-button" onclick="login()">로그인</button>
+    </div>
+</body>
+</html>

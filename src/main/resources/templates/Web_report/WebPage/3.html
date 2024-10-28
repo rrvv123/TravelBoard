@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgba(52, 177, 246, 1);
+        }
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            overflow: hidden;
+        }
+        .image {
+            margin: 0 auto;
+            background-size: 0% 500px;
+            width: 183px;
+        }
+        h1 {
+            font-size: 3em;
+            text-align: center;
+        }
+        .contents {
+            font-size: large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            float: left;
+        }
+        li {
+            list-style: none;
+        }
+        .outer-menu-item {
+            float: left;
+            position: relative;
+        }
+        .outer-menu-item:hover {
+            background-color: black;
+            color: white;
+        }
+        .menu-title {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            padding: 5px 20px;
+        }
+        .inner-menu {
+            display: none;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 2px 6px rgba(5, 5, 5, 0.9);
+            z-index: 1000;
+            text-align: center;
+        }
+        .inner-menu-item > a {
+            display: block;
+            padding: 5px 10px;
+            color: black;
+        }
+        .inner-menu-item > a:hover {
+            background-color: black;
+            color: white;
+        }
+        .date {
+            padding-top: 10px;
+            float: right;
+        }
+        .box {
+            width: 1000px;
+            height: 35px;
+            border-top: 1px solid black;
+            background-color: rgb(251, 255, 195);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .left {
+            float: left;
+            margin: 0 auto;
+            width: 700px;
+            height: 500px;
+            overflow: hidden;
+            background-color: rgb(248, 122, 122);
+        }
+        .right {
+            float: right;
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
+            background-color: rgb(65, 163, 134);
+        }
+        .container_header {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .container_middle {
+            color: rgb(131, 29, 226);
+            width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            overflow: hidden;
+        }
+        .container_body {
+            width: 1000px;
+            height: 500px;
+            background-color: white;
+        }
+        .container_footer {
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .img, .img1, .img2, .img4 {
+            background-repeat: no-repeat;
+            border-radius: 30px 30px 30px 30px;
+        }
+        .img {
+            width: 340px;
+            height: 200px;
+            margin-left: 3px;
+            margin-top: 20px;
+            background-image: url(../WebImage/핀란드맛집/핀란드/ekberg.jpg);
+        }
+        .img1 {
+            width: 200px;
+            height: 200px;
+            margin-right: 50px;
+            margin-left: 497px;
+            margin-top: -200px;
+            background-image: url(../WebImage/핀란드맛집/핀란드/forza.jpg);
+        }
+        .img2 {
+            width: 200px;
+            height: 200px;
+            margin-left: 300px;
+            margin-top: 70px;
+            background-image: url(../WebImage/핀란드맛집/핀란드/harald.jpg);
+        }
+        .title {
+            width: 150px;
+            height: 50px;
+            margin-top: -140px;
+            margin-left: 80px;
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .title1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        .footer {
+            background-color: rgb(248, 248, 123);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".outer-menu-item").hover(function () {
+                $(this).find(".inner-menu").show();
+            }, function () {
+                $(this).find(".inner-menu").hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <a id="home"></a>
+        <div class="image">
+            <img src="../WebImage/핀란드 국기.jpg">
+        </div>
+        <h1>[ 핀란드 ]</h1>
+        <br>
+        <div class="box">
+            <nav id="main-navigation">
+                <div class="contents">
+                    <ul class="outer-menu">
+                        <li class="outer-menu-item">
+                            <span class="menu-title"><h2>다른나라로</h2></span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="1.html">영국</a></li>
+                                <li class="inner-menu-item"><a href="2.html">일본</a></li>
+                                <li class="inner-menu-item"><a href="4.html">호주</a></li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title"><h2>현지인 추천 맛집</h2></span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#first">추천맛집</a></li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title"><h2>기념품 추천</h2></span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#second">기념품</a></li>
+                            </ul>
+                        </li>
+                        <li class="outer-menu-item">
+                            <span class="menu-title"><h2>관광명소</h2></span>
+                            <ul class="inner-menu">
+                                <li class="inner-menu-item"><a href="#third">관광소</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="date">
+                <p>2023.04.24</p>
+            </div>
+        </div>
+        <div class="container_header">
+            <a id="first"></a>
+            <div class="left">
+                <div class="img"></div>
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="title">
+                    <p><a href="5.html">현지인 추천 맛집</a></p>
+                </div>
+            </div>
+            <div class="right">
+                <a id="second"></a>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <img src="../WebImage/핀란드맛집/핀란드/무민샵.jpg">
+                            </div>
+                        </td>
+                        <td class="title1">
+                            <p><a href="5.html">기념품</a></p>
+                            <p><a href="5.html">추천</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div>
+                                <img src="../WebImage/핀란드맛집/핀란드/마리메꼬.jpg">
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>    
+                </table>
+            </div>
+        </div>
+        <div class="container_middle"><h2>관광명소</h2></div>
+        <div class="container_body">
+            <table>
+                <tr>
+                    <td><img src="../WebImage/핀란드맛집/핀란드/무민.jpg"></td>
+                    <td>
+                        <b>
+                        <p>1. 무민월드</p>
+                        <p>: 핀란드의 무민동화 시리즈에 등장하는 캐릭터 무민을 테마로</p>
+                        <p>조성한 어린이를 위한 놀이공원입니다.</p>
+                        <p>핀란드 남서부 해안의 작은 항구도시인 난탈이에 위치하고 있으며,</p>
+                        <p>연각 약 30만 명이 방문하는 핀란드를 대표하는 인기 광광지입니다.</p>
+                        <p>이 테마 공간에서 총 26개의 테마를 즐길 수 있으니 핀란드 여행 시</p>
+                        <p>필수 관광지로 다녀와야 하는 곳입니다.</p>
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>
+                        <p>2. 산타클로스 마을</p>
+                        <p>: 산타클로스가 살고 있는 지역이라고 유명한 이 곳, 핀란드에서</p>
+                        <p>꼭 들러야하는 산타클로스 마을은 어린아이들에게 꿈과 희망을</p>
+                        <p>가득 안겨주는 곳입니다.</p>
+                        <p>이곳에 있는 우체국에서는 어린이들이 보낸 편지에 일일이</p>
+                        <p>답장을 해 주는데, 이를 위해 12개 국어를 사용하는 비서들이</p>
+                        <p>산타클로스를 돕고 있다고 합니다. 이처럼 추운지역이지만</p>
+                        <p>마음이 따뜻해지고 아름다운 풍경을 볼 수 있는 산타클로스</p>
+                        <p>마을을 꼭 가보세요.</p>
+                        </b>
+                    </td>
+                    <td><img src="../WebImage/핀란드맛집/핀란드/산타.jpg"></td>
+                </tr>
+            </table>
+            <a id="third"></a>
+        </div>
+        <div class="container_footer">
+            <div class="footer">
+                <a href="#home">맨 위로</a> || <a href="../FirstPage.html">메인 홈페이지로</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

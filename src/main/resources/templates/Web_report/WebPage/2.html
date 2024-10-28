@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(247, 248, 230);
+        }
+        .main {
+            margin: 0 auto;
+            width: 1600px;
+        }
+        .image {
+            margin: 0 auto;
+            background-size: 0% 500px;
+            width: 183px;
+        }
+        .title {
+            font-size: 3em;
+            text-align: center;
+        }
+        #container {
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .contents {
+            color: rgb(255, 136, 0);
+            font-size: x-large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .box {
+            margin: 0 auto;
+            width: 1400px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .box1 {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .box2 {
+            margin: 0 auto;
+            width: 1500px;
+        }
+        .footer {
+            background-color: rgb(187, 252, 230);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+         $(document).ready(function () {
+            $("p").animate({
+                opacity: 0.5,
+            });
+
+            $("img").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+                opacity: 1,
+                fontSize: "1.5em",
+                fontWeight: "bold"
+            }, 1000);
+
+            $("th").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+                opacity: 0,
+            }, 1000);
+
+            $("h2").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+                opacity: 0,
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <a id="home"></a>
+        <div class="image">
+            <img src="../WebImage/일본 국기.jpg">
+        </div>
+        <h1 class="title">[ 일본 ]</h1>
+        <h2>목차</h2>
+        <div id="container">
+            <div class="contents">
+                <a href="#first">관광명소</a>✐✎✐✎✐✎✐✎✐✎✐✎✐<a href="#second">현지인 추천 맛집</a>✐✎✐✎✐✎✐✎✐✎✐✎✐<a href="#end">기념품 추천</a>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <a id="first"></a>
+            <h2>관광명소</h2>
+            <table>
+                <tr>
+                    <th>금각사</th>
+                    <th>기요미즈데라</th>
+                    <th>닛코국립공원</th>
+                    <th>히메지 성</th>
+                </tr>
+                <tr>
+                    <td><img src="../Webimage/관광명소/금각사.jpg"></td>
+                    <td><img src="../Webimage/관광명소/기요미즈데라.jpg"></td>
+                    <td><img src="../Webimage/관광명소/닛코 국립공원.jpg"></td>
+                    <td><img src="../Webimage/관광명소/히메지성.jpg"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>금각사는 교토에서 가장 인기있는</p>
+                        <p>관광명소 중 한 곳입니다.</p>
+                        <p>'금으로 꾸민 누각'이라는 이름에</p>
+                        <p>걸맞게 이 금각사는 유네스코</p>
+                        <p>세계문화유산에 지정될만큼 아름다운</p>
+                        <p>경치를 자아내고있으니 꼭 둘러보세요.</p>
+                    </td>
+                    <td>
+                        <p>교토의 동쪽에 위치한 기요미즈데라에</p>
+                        <p>발을 들이는 순간 과거로 시간 여행을</p>
+                        <p>한 듯한 착각을 불러일으킵니다.</p>
+                        <p>아름다운 풍경이 눈 앞에 펼쳐지는 것을</p>
+                        <p>확일 할 수 있는 곳입니다.</p>
+                    </td>
+                    <td>
+                        <p>일본에서 가장 아름다운 경치와</p>
+                        <p>가장 많은 방문객을 자랑하는 공원 중</p>
+                        <p>하나입니다. 자연의 매력과</p>
+                        <p>야외활동을 즐기는 사람들에게 아주</p>
+                        <p>알맞은 관광지입니다.</p>
+                    </td>
+                    <td>
+                        <p>히메지 성은 일본을 통틀어 보존 상태가</p>
+                        <p>가장 우수한 성입니다.</p>
+                        <p>일본 성 건축 양식의 전형이라 할 수</p>
+                        <p>있는 이 곳에서 아름다운 풍경을</p>
+                        <p>감상해보세요.</p>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+            <a id="second"></a>
+            <h2>현지인 추천 맛집</h2>
+            <div class="box1">
+                <table>
+                    <tr>
+                        <th>첫 번째</th>
+                        <th>두 번째</th>
+                        <th>세 번째</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../Webimage/일본 맛집/미시마테이.jpg"></td>
+                        <td><img src="../Webimage/일본 맛집/시조텐.jpg"></td>
+                        <td><img src="../Webimage/일본 맛집/효테이.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>미시마테이</p>
+                            <p>: 채소와 면을 곁들여 먹는 군침</p>
+                            <p>도는 소고기 요리를 맛볼 수 있는</p>
+                            <p>식당입니다. 한번 맛보면 빠질 수</p>
+                            <p>없는 교토내 유명 맛집입니다.</p>
+                        </td>
+                        <td>
+                            <p>오와리야 시조텐</p>
+                            <p>: 교토에서 가장 오래된 소바 음식점</p>
+                            <p>입니다. 그 명성을 확인해보러</p>
+                            <p>직접 가봐야하지 않을까요?</p>
+                            <p>이 곳은 특제 소스로 손님에게</p>
+                            <p>제공을 하고 있지만, 여전히</p>
+                            <p>합리적인 가격으로 판매하는 맛집입니다.</p>
+                        </td>
+                        <td>
+                            <p>효테이</p>
+                            <p>: 300년 전 모습을 그대로 간직하고</p>
+                            <p>있어 시간이 멈춘듯한 분위기를 느낄 수</p>
+                            <p>있습니다. 또 미쉐린 별 3개에 빛나는</p>
+                            <p>식당으로 섬세한 맛과 멋을 자랑하는</p>
+                            <p>고급 요리 맛집입니다.</p>
+                        </td>
+                </table>
+            </div>
+            <br><br><br>
+            <h2>기념품 추천</h2>
+            <a id="end"></a>
+            <div class="box2">
+                <table>
+                    <tr>
+                        <td><img src="../Webimage/기념품/로이스.jpg"></td>
+                        <td>
+                            <p>1. 로이스 초콜릿</p>
+                            <p>이미 우리나라 사람들에게 일본</p>
+                            <p>면세점에서 가장 많이 구매하는</p>
+                            <p>넘버원 쇼핑리스트인 로이스 초콜렛</p>
+                            <p>입니다. 이 초콜릿은 많은 종류로</p>
+                            <p>이루어져있어서 다양한 맛을</p>
+                            <p>체험해 볼 수 있습니다.</p>
+                            <p>로이스 초콜릿은 우리나라에서도 구할 수</p>
+                            <p>있는 상품이지만, 일본 면세점에서 구매</p>
+                            <p>하는 것이 훨씬 저렴합니다.</p>
+                            <p>일본으로 여행을 갔을 시에 선물용으로</p>
+                            <p>구매하는 것을 추천하는 상품입니다.</p>
+                            <p>유의사항은 짧은 유통기한을 가지고</p>
+                            <p>있고, 냉장보관을 해야됩니다.</p>
+                        </td>
+                        <td><img src="../Webimage/기념품/사케.jpg"></td>
+                        <td>
+                            <p>2. 사케</p>
+                            <p>사케는 발효된 쌀과 맑은 물로 빚은</p>
+                            <p>술입니다. 식당에서 쉽게 볼 수 있는</p>
+                            <p>사케는 특별한 날을 기념할 때</p>
+                            <p>마시거나 친구나 주변 지인들에게</p>
+                            <p>선물로 주기 위해 기념품으로 사가는</p>
+                            <p>것 또한 좋은 방법입니다.</p>
+                            <p>또, 사케는 극히 적은 몇 가지를 제외</p>
+                            <p>하고 숙성할 필요가 없는 술입니다.</p>
+                            <p>구입 후 6개월 이내에 먹어야하고</p>
+                            <p>어떤 음식이든 궁합이 좋은 술입니다.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <a href="#home">맨 위로</a> || <a href="../FirstPage.html">메인 홈페이지로</a> || <a href="images.html">사진 모아보기</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

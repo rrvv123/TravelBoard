@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgba(246, 255, 148, 1);
+        }
+        .main {
+            margin: 0 auto;
+            width: 1600px;
+        }
+        .image {
+            margin: 0 auto;
+            background-size: 0% 500px;
+            width: 183px;
+        }
+        .title {
+            font-size: 3em;
+            text-align: center;
+        }
+        #container {
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            background-color: white;
+        }
+        .contents {
+            color: rgb(0, 139, 219);
+            font-size: x-large;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .box {
+            margin: 0 auto;
+            width: 1400px;
+        }
+        a {
+            text-decoration: none;
+        }
+        .box1 {
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .box2 {
+            margin: 0 auto;
+            width: 1500px;
+        }
+        .footer {
+            background-color: rgb(187, 252, 230);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+         $(document).ready(function () {
+            $("p").animate({
+                opacity: 0.5,
+            });
+
+            $("img").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+                opacity: 1,
+                fontSize: "1.5em",
+                fontWeight: "bold"
+            }, 1000);
+
+            $("th").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+            opacity: 0,
+            }, 1000);
+
+            $("h2").animate({
+                opacity: 0.5,
+            }, 1000).animate({
+                opacity: 0,
+            }, 1000);
+        });
+    </script>
+</head>
+<body>
+    <div class="main">
+        <a id="home"></a>
+        <div class="image">
+            <img src="../Webimage/영국 국기.jpg">
+        </div>
+        <h1 class="title">[ 영국 ]</h1>
+        <br>
+        <h1>목차</h1>
+        <div id="container">
+            <div class="contents">
+                <a href="#first">관광명소</a>✐✎✐✎✐✎✐✎✐✎✐✎✐<a href="#second">현지인 추천 맛집</a>✐✎✐✎✐✎✐✎✐✎✐✎✐<a href="#end">기념품 추천</a>
+            </div>
+        </div>
+        <br>
+        <div class="box">
+            <a id="first"></a>
+            <h2>관광명소</h2>
+            <table>
+                <tr>
+                    <th>영국박물관</th>
+                    <th>런던아이</th>
+                    <th>버킹엄궁전</th>
+                    <th>타워브리지</th>
+                </tr>
+                <tr>
+                    <td><img src="../Webimage/대영 박물관.png"></td>
+                    <td><img src="../Webimage/런던 아이.png"></td>
+                    <td><img src="../Webimage/버킹엄 궁전.png"></td>
+                    <td><img src="../Webimage/타워브릿지.jpg"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>영국박물관은 전 세계 인류 역사와</p>
+                        <p>문화를 아우르는 800만 점 이상의</p>
+                        <p>유물을 소장하고 있습니다.</p>
+                        <p>이 곳을 방문한다면 특별한 경험을</p>
+                        <p>갖게 될 것입니다.</p>
+                    </td>
+                    <td>
+                        <p>런던 아이는 높이 135미터에</p>
+                        <p>달하는 거대한 관람차로 유리</p>
+                        <p>캡슐 안에서 휘황찬란한 도시의</p>
+                        <p>전경을 감상할 수 있습니다.</p>
+                    </td>
+                    <td>
+                        <p>버킹엄 궁전은 영국 왕실의 권력과</p>
+                        <p>전통을 상징하는 곳이기도 합니다.</p>
+                        <p>화려한 의식이 펼쳐지는 근위병</p>
+                        <p>교대식도 관람이 가능하니 행사에</p>
+                        <p>참여하여 관람하는 것을 추천합니다.</p>
+                    </td>
+                    <td>
+                        <p>타워브리지에서 광활하게 펼쳐진</p>
+                        <p>템즈 강을 조망하기 좋습니다.</p>
+                        <p>그리고 런던 일대의 전경을 조망하기에</p>
+                        <p>더할 나위 없는 전망 명소입니다.</p>
+                    </td>
+                </tr>
+            </table>
+            <br><br><br>
+            <a id="second"></a>
+            <h2>현지인 추천 맛집</h2>
+            <div class="box1">
+                <table>
+                    <tr>
+                        <th>첫 번째</th>
+                        <th>두 번째</th>
+                        <th>세 번째</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../Webimage/영국 맛집/스크린샷(28).png"></td>
+                        <td><img src="../Webimage/영국 맛집/얼스코트.jpg"></td>
+                        <td><img src="../Webimage/영국 맛집/피쉬앤 칩스.jpg"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Old Compton Brasserie</p>
+                            <p>: 분위기부터 영국 현지의 느낌을</p>
+                            <p>단번에 받을 수 있는 칵테일바입니다.</p>
+                            <p>술만 마시는 것도 가능하고,</p>
+                            <p>식사도 해결 할 수 있습니다.</p>
+                        </td>
+                        <td>
+                            <p>Nando's</p>
+                            <p>: 난도스는 유명한 프랜차이즈이며</p>
+                            <p>저렴한 가격에 푸짐한 양을 느낄 수</p>
+                            <p>있는 맛집입니다.</p>
+                            <p>남아공식 치킨요리를 파는 가게이니</p>
+                            <p>치킨요리를 선호하는 분에게</p>
+                            <p>안성맞춤인 맛집입니다.</p>
+                        </td>
+                        <td>
+                            <p>Fish Plaice</p>
+                            <p>: 영국 대표음식인 피쉬앤 칩스를</p>
+                            <p>경험해 볼 수 있는 맛집입니다.</p>
+                            <p>영국박물관 근처에 있으며 높은 평점을</p>
+                            <p>유지하고 있는 맛집입니다.</p>
+                        </td>
+                </table>
+            </div>
+            <br><br><br>
+            <h2>기념품 추천</h2>
+            <a id="end"></a>
+            <div class="box2">
+                <table>
+                    <tr>
+                        <td><img src="../Webimage/기념품/캐드버리.jpg"></td>
+                        <td>
+                            <p>1. 캐드버리 초콜릿</p>
+                            <p>찰리와 초콜릿 공장의 배경이 된</p>
+                            <p>초콜릿 공장이 바로 버밍험에 있는</p>
+                            <p>캐드버리 초콜릿 공장입니다.</p>
+                            <p>영국의 대표적인 초콜릿 브랜드이고</p>
+                            <p>다른 유럽 국가들에서도 꽤나 쉽게</p>
+                            <p>찾아 볼 수 있습니다.</p>
+                            <p>우리나라에서도 캐드버리 밀카</p>
+                            <p>초콜릿 몇 종류가 수입이 되고 있는데</p>
+                            <p>영국이 캐드버리의 본고장인 만큼</p>
+                            <p>정말 다양한 캐드버리 초콜릿을</p>
+                            <p>볼 수 있습니다.</p>
+                            <p>기념품으로 사갈 수 있고 선물용으로도</p>
+                            <p>알맞은 대표 기념품입니다.</p>
+                        </td>
+                        <td><img src="../Webimage/기념품/지팡이.jpg"></td>
+                        <td>
+                            <p>2. 해리포터 마법지팡이</p>
+                            <p>해리포터 스튜디오에 가게 된다면</p>
+                            <p>사야되는 것이 있는데, 바로 마법</p>
+                            <p>지팡이입니다.</p>
+                            <p>해리포터를 좋아하는 사람들에게</p>
+                            <p>추천하는 기념품입니다.</p>
+                            <p>고급스러운 포장과 그에 알맞게</p>
+                            <p>지팡이들도 가볍고 고급스럽습니다.</p>
+                            <p>만약, 주변에 해리포터를 좋아하는</p>
+                            <p>사람이 있다면 이 기념품을 추천합니다.</p>
+                            <p>아마 그들의 감동한 표정을 볼 수</p>
+                            <p>있을거예요.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="main">
+            <div class="footer">
+                <a href="#home">맨 위로</a> || <a href="../FirstPage.html">메인 홈페이지로</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
